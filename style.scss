@@ -128,17 +128,26 @@ body {
 
 /* responsive css*/
 
-// Small-medium devices 
-@media (max-width: 767px) {
+@media (max-width: 575px) {
     .card-wrapper {
+        width: 70%;
+        font-size: 3px;
+        background-color: rgb(58, 120, 17);
+    }
+}
+// Small-medium devices 
+@media (min-width: 576px) and (max-width: 767px) {
+    .card-wrapper {
+        width: 50%;
         font-size: 13px;
-        background-color: antiquewhite;
+        background-color: rgb(120, 75, 17);
     }
 }
 
 //Medium-large devices
 @media (min-width: 768px) and (max-width: 992px) { 
     .card-wrapper {
+        width: 30%;
         font-size: 14px;
         background-color: blueviolet;
     }
@@ -147,6 +156,7 @@ body {
 // Large devices (992px and up)
 @media (min-width: 992px) { 
     .card-wrapper {
+        //width: 100%;
         background-color: brown;
     }
  }

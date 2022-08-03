@@ -105,14 +105,23 @@ body .container .container--card .card-wrapper .card .card-body .card-bottom div
 }
 
 /* responsive css*/
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   .card-wrapper {
+    width: 70%;
+    font-size: 3px;
+    background-color: rgb(58, 120, 17);
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .card-wrapper {
+    width: 50%;
     font-size: 13px;
-    background-color: antiquewhite;
+    background-color: rgb(120, 75, 17);
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .card-wrapper {
+    width: 30%;
     font-size: 14px;
     background-color: blueviolet;
   }
