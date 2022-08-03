@@ -26,47 +26,32 @@ body .circle.circle-2 {
   bottom: calc(-200px / 2);
   left: 200px;
 }
-body .main {
+body .container {
   background-color: #eff0f1;
   border-radius: 26px;
   padding: 62px;
   z-index: 1;
   position: relative;
   box-shadow: 0px 76px 27px 0px rgba(6, 27, 82, 0.1019607843);
+  /*.row {
+      display: flex;
+      flex-wrap: wrap;
+  }*/
 }
-body .main .tab {
-  overflow: hidden;
-}
-body .main .tab li {
-  transition: 0.5s;
-  outline: none;
-}
-body .main .tab li:hover {
-  background-color: #e5e7f0;
-}
-body .main .tab li.active {
-  background-color: #e5e7f0;
-}
-body .main .tabcontent {
-  display: none;
-}
-body .main .row {
-  display: flex;
-  flex-wrap: wrap;
-}
-body .main .row .container-menu-name {
+body .container .container--menu .container--menu-name {
   font-size: 32px;
   font-weight: bold;
   font-family: "Merriweather", serif;
 }
-body .main .row ul {
+body .container .container--menu ul {
+  flex-wrap: wrap;
   display: flex;
   flex-direction: row;
   gap: 10px;
   margin-top: 24px;
   padding-left: 0;
 }
-body .main .row ul li {
+body .container .container--menu ul li {
   list-style: none;
   font-size: 16px;
   font-weight: 500;
@@ -77,31 +62,63 @@ body .main .row ul li {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: 0.5s;
+  outline: none;
 }
-body .main .row .card {
+body .container .container--menu ul li:hover {
+  background-color: #e5e7f0;
+}
+body .container .container--menu ul li:focus {
+  background-color: #e5e7f0;
+}
+body .container .container--menu .container--menu-content {
+  display: none;
+}
+body .container .container--card .card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+body .container .container--card .card-wrapper .card {
   background-color: #fff;
   border: none;
   border-radius: 32px;
 }
-body .main .row .card .card-image img {
+body .container .container--card .card-wrapper .card .card-image img {
+  max-width: 100%;
   border-radius: 12px;
 }
-body .main .row .card .card-body {
+body .container .container--card .card-wrapper .card .card-body {
   font-size: 24px;
   font-weight: 500;
 }
-body .main .row .card .card-body img {
+body .container .container--card .card-wrapper .card .card-body img {
   max-width: 100%;
   border-radius: 24px;
 }
-body .main .row .card .card-body .vector {
+body .container .container--card .card-wrapper .card .card-body .card-bottom {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-body .main .row .card .card-body .vector img {
-  max-width: 100%;
-}
-body .main .row .card .card-body .vector div {
+body .container .container--card .card-wrapper .card .card-body .card-bottom div {
   font-size: 16px;
+}
+
+/* responsive css*/
+@media (max-width: 767px) {
+  .card-wrapper {
+    font-size: 13px;
+    background-color: antiquewhite;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .card-wrapper {
+    font-size: 14px;
+    background-color: blueviolet;
+  }
+}
+@media (min-width: 992px) {
+  .card-wrapper {
+    background-color: brown;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,19 +1,15 @@
-function openContent(evt, tabName) {
 
-    var i, tabcontent, tablinks;
+function display(event, tabName) {
+    var tabContent = document.getElementsByClassName("container--menu-content")
+    var tabLinks = document.getElementsByClassName("container--menu-list")
 
-    tabcontent = document.getElementsByClassName("tabcontent");
-
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-
-    tablinks = document.getElementsByClassName("tablinks");
-    
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    for (var i = 0; i < tabContent.length; i++) {
+        tabContent[i].style.display = "none";
+      }
+    for (i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].className = tabLinks[i].className.replace("active", "");
     }
 
     document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
-  }
+    event.style.backgroundColor = "red"
+}
