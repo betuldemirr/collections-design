@@ -33,10 +33,10 @@ body .container {
   z-index: 1;
   position: relative;
   box-shadow: 0px 76px 27px 0px rgba(6, 27, 82, 0.1019607843);
-  /*.row {
-      display: flex;
-      flex-wrap: wrap;
-  }*/
+}
+body .container .row {
+  display: flex;
+  flex-wrap: wrap;
 }
 body .container .container--menu .container--menu-name {
   font-size: 32px;
@@ -95,39 +95,21 @@ body .container .container--card .card-wrapper .card .card-body img {
   max-width: 100%;
   border-radius: 24px;
 }
-body .container .container--card .card-wrapper .card .card-body .card-bottom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-body .container .container--card .card-wrapper .card .card-body .card-bottom div {
+body .container .container--card .card-wrapper .card .card-body .card-body-bottom span {
   font-size: 16px;
 }
 
-/* responsive css*/
-@media (max-width: 575px) {
-  .card-wrapper {
-    width: 70%;
-    font-size: 3px;
-    background-color: rgb(58, 120, 17);
+@media (max-width: 767px) {
+  .container .container--card .card-wrapper .card-body .card-body-name {
+    font-size: 20px;
   }
 }
-@media (min-width: 576px) and (max-width: 767px) {
-  .card-wrapper {
-    width: 50%;
-    font-size: 13px;
-    background-color: rgb(120, 75, 17);
-  }
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  .card-wrapper {
-    width: 30%;
-    font-size: 14px;
-    background-color: blueviolet;
-  }
-}
-@media (min-width: 992px) {
-  .card-wrapper {
-    background-color: brown;
-  }
-}/*# sourceMappingURL=style.css.map */
+/* responsive css
+@media (max-width: 575px) { }
+// Small-medium devices 
+@media (min-width: 576px) and (max-width: 767px) { }
+//Medium-large devices
+@media (min-width: 768px) and (max-width: 992px) { }
+// Large devices (992px and up)
+@media (min-width: 992px) { }
+*//*# sourceMappingURL=style.css.map */
