@@ -9,6 +9,7 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+
 body .circle {
   width: 200px;
   height: 200px;
@@ -16,16 +17,19 @@ body .circle {
   position: absolute;
   z-index: 0;
 }
+
 body .circle.circle-1 {
   background-color: #e5e7f0;
   top: calc(-200px / 2);
   right: 200px;
 }
+
 body .circle.circle-2 {
   background-color: #e5e7f0;
   bottom: calc(-200px / 2);
   left: 200px;
 }
+
 body .container {
   background-color: #eff0f1;
   border-radius: 26px;
@@ -34,15 +38,18 @@ body .container {
   position: relative;
   box-shadow: 0px 76px 27px 0px rgba(6, 27, 82, 0.1019607843);
 }
+
 body .container .row {
   display: flex;
   flex-wrap: wrap;
 }
+
 body .container .container--menu .container--menu-name {
   font-size: 32px;
   font-weight: bold;
   font-family: "Merriweather", serif;
 }
+
 body .container .container--menu ul {
   flex-wrap: wrap;
   display: flex;
@@ -51,6 +58,7 @@ body .container .container--menu ul {
   margin-top: 24px;
   padding-left: 0;
 }
+
 body .container .container--menu ul li {
   list-style: none;
   font-size: 16px;
@@ -65,36 +73,45 @@ body .container .container--menu ul li {
   transition: 0.5s;
   outline: none;
 }
+
 body .container .container--menu ul li:hover {
   background-color: #e5e7f0;
 }
+
 body .container .container--menu ul li:focus {
   background-color: #e5e7f0;
 }
+
 body .container .container--menu .container--menu-content {
   display: none;
 }
+
 body .container .container--card .card-wrapper {
   display: flex;
   flex-wrap: wrap;
 }
+
 body .container .container--card .card-wrapper .card {
   background-color: #fff;
   border: none;
   border-radius: 32px;
 }
+
 body .container .container--card .card-wrapper .card .card-image img {
   max-width: 100%;
   border-radius: 12px;
 }
+
 body .container .container--card .card-wrapper .card .card-body {
   font-size: 24px;
   font-weight: 500;
 }
+
 body .container .container--card .card-wrapper .card .card-body img {
   max-width: 100%;
   border-radius: 24px;
 }
+
 body .container .container--card .card-wrapper .card .card-body .card-body-bottom span {
   font-size: 16px;
 }
@@ -103,7 +120,9 @@ body .container .container--card .card-wrapper .card .card-body .card-body-botto
   .container .container--card .card-wrapper .card-body .card-body-name {
     font-size: 20px;
   }
+
 }
+
 /* responsive css
 @media (max-width: 575px) { }
 // Small-medium devices 
@@ -112,4 +131,11 @@ body .container .container--card .card-wrapper .card .card-body .card-body-botto
 @media (min-width: 768px) and (max-width: 992px) { }
 // Large devices (992px and up)
 @media (min-width: 992px) { }
-*//*# sourceMappingURL=style.css.map */
+*/
+/*# sourceMappingURL=style.css.map 
+
+justify-content: flex-start;
+justify-content: start;
+flex-flow: column wrap;
+
+*/
